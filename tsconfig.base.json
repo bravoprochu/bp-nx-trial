@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bp-nx-trial/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@bp-nx-trial/tailwind-example/shell": [
+        "libs/tailwind-example/shell/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
