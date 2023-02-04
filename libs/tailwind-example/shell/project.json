@@ -9,7 +9,8 @@
       "executor": "@nrwl/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/tailwind-example/shell/ng-package.json"
+        "project": "libs/tailwind-example/shell/ng-package.json",
+        "tailwindConfig": "libs/tailwind-example/shell/tailwind.config.js"
       },
       "configurations": {
         "production": {
@@ -27,10 +28,17 @@
       "options": {
         "jestConfig": "libs/tailwind-example/shell/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
           "libs/tailwind-example/shell/**/*.ts",
@@ -39,5 +47,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["scope:tailwindExample", "type:feature"]
 }
