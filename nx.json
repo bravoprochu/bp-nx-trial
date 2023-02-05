@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "bp-nx-trial",
+  "npmScope": "bp",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -50,11 +50,15 @@
       "linter": "eslint",
       "unitTestRunner": "jest",
       "buildable": true,
-      "changeDetection": "OnPush"
+      "changeDetection": "OnPush",
+      "style": "scss",
+      "tags": "scope:bp, type:feature"
     },
     "@nrwl/angular:component": {
       "style": "scss",
-      "changeDetection": "onPush"
+      "changeDetection": "OnPush",
+      "inlineStyle": true,
+      "skipTests": true
     }
   }
 }

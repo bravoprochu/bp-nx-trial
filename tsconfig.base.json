@@ -15,9 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bp-nx-trial/tailwind-example/shell": [
-        "libs/tailwind-example/shell/src/index.ts"
-      ]
+      "@bp/bp-training/shell/feature": [
+        "libs/bp-training/shell/feature/src/index.ts"
+      ],
+      "@bp/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@bp/state-training/feature": [
+        "libs/state-training/feature/src/index.ts"
+      ],
+      "@bp/state-training/shell/feature": [
+        "libs/state-training/shell/feature/src/index.ts"
+      ],
+      "@bp/tailwind-example/shell": ["libs/tailwind-example/shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

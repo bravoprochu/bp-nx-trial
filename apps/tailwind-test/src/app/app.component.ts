@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'bp-nx-trial-root',
+  selector: 'bp-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

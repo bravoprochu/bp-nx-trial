@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "bp-nx-trial",
+            "prefix": "bp",
             "style": "kebab-case"
           }
         ]

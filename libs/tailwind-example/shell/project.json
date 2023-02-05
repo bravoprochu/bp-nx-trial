@@ -3,7 +3,7 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/tailwind-example/shell/src",
-  "prefix": "bp-nx-trial",
+  "prefix": "bp",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
