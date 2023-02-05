@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bp/bp-training/data-access": [
+        "libs/bp-training/data-access/src/index.ts"
+      ],
       "@bp/bp-training/shell/feature": [
         "libs/bp-training/shell/feature/src/index.ts"
       ],
