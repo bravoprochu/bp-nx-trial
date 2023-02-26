@@ -1,5 +1,5 @@
 {
-  "name": "@bp/bp-training/data-access",
+  "name": "@bp/bp-training/shared/data-access",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^15.1.0",

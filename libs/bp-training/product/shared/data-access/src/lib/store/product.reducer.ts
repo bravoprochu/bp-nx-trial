@@ -4,10 +4,12 @@ import * as ProductActions from './product.actions';
 export const productFeatureKey = 'product';
 
 export interface State {
-  isLoading?: boolean;
+  isLoading: boolean;
 }
 
-export const initialState: State = {};
+export const initialState: State = {
+  isLoading: true,
+};
 
 export const reducer = createReducer(
   initialState,

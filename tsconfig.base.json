@@ -15,9 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bp/bp-training/data-access": [
-        "libs/bp-training/data-access/src/index.ts"
-      ],
       "@bp/bp-training/movies/detail/feature": [
         "libs/bp-training/movies/detail/feature/src/index.ts"
       ],
@@ -45,8 +42,8 @@
       "@bp/bp-training/product/shell/feature": [
         "libs/bp-training/product/shell/feature/src/index.ts"
       ],
-      "@bp/bp-training/shared/shell/data-access": [
-        "libs/bp-training/shared/shell/data-access/src/index.ts"
+      "@bp/bp-training/shared/data-access": [
+        "libs/bp-training/shared/data-access/src/index.ts"
       ],
       "@bp/bp-training/shell/feature": [
         "libs/bp-training/shell/feature/src/index.ts"
