@@ -15,6 +15,13 @@ export const bpTrainingShellFeatureRoutes: Route[] = [
             (m) => m.StateTrainingShellFeatureModule
           ),
       },
+      {
+        path: 'products',
+        loadChildren: () =>
+          import('@bp/bp-training/product/shell/feature').then(
+            (m) => m.BpTrainingProductShellFeatureModule
+          ),
+      },
     ],
   },
   {

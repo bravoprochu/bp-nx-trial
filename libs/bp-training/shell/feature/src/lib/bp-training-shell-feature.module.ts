@@ -5,13 +5,14 @@ import { bpTrainingShellFeatureRoutes } from './lib.routes';
 import { ShellLayoutComponent } from './shell-layout/shell-layout.component';
 
 import { SharedUiModule } from '@bp/shared/ui';
+import { BpTrainingDataAccessModule } from '@bp/bp-training/data-access';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forRoot(bpTrainingShellFeatureRoutes),
     SharedUiModule,
-    RouterModule,
+    BpTrainingDataAccessModule,
   ],
   declarations: [ShellLayoutComponent],
 })

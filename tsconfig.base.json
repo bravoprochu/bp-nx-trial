@@ -18,9 +18,22 @@
       "@bp/bp-training/data-access": [
         "libs/bp-training/data-access/src/index.ts"
       ],
+      "@bp/bp-training/product/detail/feature": [
+        "libs/bp-training/product/detail/feature/src/index.ts"
+      ],
+      "@bp/bp-training/product/list/feature": [
+        "libs/bp-training/product/list/feature/src/index.ts"
+      ],
+      "@bp/bp-training/product/shared/data-access": [
+        "libs/bp-training/product/shared/data-access/src/index.ts"
+      ],
+      "@bp/bp-training/product/shell/feature": [
+        "libs/bp-training/product/shell/feature/src/index.ts"
+      ],
       "@bp/bp-training/shell/feature": [
         "libs/bp-training/shell/feature/src/index.ts"
       ],
+      "@bp/shared/ngrx/util": ["libs/shared/ngrx/util/src/index.ts"],
       "@bp/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@bp/state-training/feature": [
         "libs/state-training/feature/src/index.ts"
