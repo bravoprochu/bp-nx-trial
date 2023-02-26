@@ -13,7 +13,7 @@ export class DataFactoryService {
 
   searchMovieByPhrase(searchPhrase: string) {
     return this.httpClient.get<MovieListResponse>(
-      `${omdbapiBaseUrl}?s${searchPhrase}`
+      `${omdbapiBaseUrl}&s=${searchPhrase}`
     );
   }
 }

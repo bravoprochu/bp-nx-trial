@@ -2,6 +2,6 @@ import { MovieList } from './movie-list';
 
 export type MovieListResponse = {
   response: boolean;
-  search: MovieList[];
+  Search: MovieList[];
   totalResults: number;
 };

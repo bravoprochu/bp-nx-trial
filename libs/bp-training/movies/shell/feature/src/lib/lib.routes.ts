@@ -1,9 +1,8 @@
 import { Route } from '@angular/router';
 import { ShellLayoutComponent } from './components/shell-layout/shell-layout.component';
+import { routesConfig } from '@bp/bp-training/movies/shared/util';
 
 export const bpTrainingMoviesShellFeatureRoutes: Route[] = [
-  /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
-
   {
     path: '',
     component: ShellLayoutComponent,
@@ -11,17 +10,17 @@ export const bpTrainingMoviesShellFeatureRoutes: Route[] = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'list',
+        redirectTo: routesConfig.listUrl,
       },
       {
-        path: 'list',
+        path: routesConfig.listUrl,
         loadComponent: () =>
           import('@bp/bp-training/movies/list/feature').then(
             (c) => c.BpTrainingMoviesListFeatureComponent
           ),
       },
       {
-        path: 'detail',
+        path: routesConfig.detailUrl,
         loadComponent: () =>
           import('@bp/bp-training/movies/detail/feature').then(
             (c) => c.BpTrainingMoviesDetailFeatureComponent

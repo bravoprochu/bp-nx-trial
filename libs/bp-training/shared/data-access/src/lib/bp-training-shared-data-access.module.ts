@@ -15,7 +15,7 @@ import { reducers } from './reducers';
     StoreDevtoolsModule.instrument({
       maxAge: 50,
     }),
-    StoreRouterConnectingModule.forRoot({ serializer: CustomSerializer }),
+    StoreRouterConnectingModule.forRoot(),
   ],
 })
 export class BpTrainingSharedDataAccessModule {}

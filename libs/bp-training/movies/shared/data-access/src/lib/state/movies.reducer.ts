@@ -1,16 +1,33 @@
-import { createReducer, on } from '@ngrx/store';
-import * as MoviesActions from './movies.actions';
+import { MovieList } from '@bp/bp-training/movies/shared/util';
+import { createFeature, createReducer, on } from '@ngrx/store';
+import { movieActionGroup } from './movies.actions';
 
 export const moviesFeatureKey = 'movies';
 
 export interface State {
-  isLoading?: boolean;
+  isLoading: boolean;
+  movies: MovieList[];
 }
 
-export const initialState: State = {};
+export const initialState: State = {
+  isLoading: false,
+  movies: [],
+};
 
-export const reducer = createReducer(
+const reducer = createReducer(
   initialState,
-
-  on(MoviesActions.loadMoviess, (state) => state)
+  on(
+    movieActionGroup.loadMoviesBySearchPhrase,
+    (state) => ({ ...state, isLoading: true, movies: [] } as State)
+  ),
+  on(
+    movieActionGroup.loadMoviesBySearchPhraseSuccess,
+    (state, action) =>
+      ({ ...state, isLoading: true, movies: action.response.Search } as State)
+  )
 );
+
+export const featureReducer = createFeature({
+  name: moviesFeatureKey,
+  reducer,
+});

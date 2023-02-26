@@ -1,5 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 import { provideMockActions } from '@ngrx/effects/testing';
+import { StoreModule } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { MoviesEffects } from './movies.effects';
@@ -10,10 +13,8 @@ describe('MoviesEffects', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [
-        MoviesEffects,
-        provideMockActions(() => actions$)
-      ]
+      imports: [StoreModule.forRoot({}), RouterModule, HttpClientModule],
+      providers: [MoviesEffects, provideMockActions(() => actions$)],
     });
 
     effects = TestBed.inject(MoviesEffects);

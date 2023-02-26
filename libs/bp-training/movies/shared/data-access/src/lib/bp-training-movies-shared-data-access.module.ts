@@ -11,7 +11,7 @@ import { DataFactoryService } from './services/data-factory.service';
   imports: [
     CommonModule,
     HttpClientModule,
-    StoreModule.forFeature(fromMovies.moviesFeatureKey, fromMovies.reducer),
+    StoreModule.forFeature(fromMovies.featureReducer),
     EffectsModule.forFeature([MoviesEffects]),
   ],
   providers: [DataFactoryService],
