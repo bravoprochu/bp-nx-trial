@@ -1,0 +1,50 @@
+{
+  "name": "bp-training-product-shared-data-access",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/bp-training/product/shared/data-access/src",
+  "prefix": "bp",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/bp-training/product/shared/data-access/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/bp-training/product/shared/data-access/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/bp-training/product/shared/data-access/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/bp-training/product/shared/data-access/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/bp-training/product/shared/data-access/**/*.ts",
+          "libs/bp-training/product/shared/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:bp", "type:feature"]
+}
