@@ -18,6 +18,21 @@
       "@bp/bp-training/data-access": [
         "libs/bp-training/data-access/src/index.ts"
       ],
+      "@bp/bp-training/movies/detail/feature": [
+        "libs/bp-training/movies/detail/feature/src/index.ts"
+      ],
+      "@bp/bp-training/movies/list/feature": [
+        "libs/bp-training/movies/list/feature/src/index.ts"
+      ],
+      "@bp/bp-training/movies/shared/data-access": [
+        "libs/bp-training/movies/shared/data-access/src/index.ts"
+      ],
+      "@bp/bp-training/movies/shared/util": [
+        "libs/bp-training/movies/shared/util/src/index.ts"
+      ],
+      "@bp/bp-training/movies/shell/feature": [
+        "libs/bp-training/movies/shell/feature/src/index.ts"
+      ],
       "@bp/bp-training/product/detail/feature": [
         "libs/bp-training/product/detail/feature/src/index.ts"
       ],
@@ -29,6 +44,9 @@
       ],
       "@bp/bp-training/product/shell/feature": [
         "libs/bp-training/product/shell/feature/src/index.ts"
+      ],
+      "@bp/bp-training/shared/shell/data-access": [
+        "libs/bp-training/shared/shell/data-access/src/index.ts"
       ],
       "@bp/bp-training/shell/feature": [
         "libs/bp-training/shell/feature/src/index.ts"

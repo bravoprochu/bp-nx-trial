@@ -9,6 +9,13 @@ export const bpTrainingShellFeatureRoutes: Route[] = [
     component: ShellLayoutComponent,
     children: [
       {
+        path: 'movies',
+        loadChildren: () =>
+          import('@bp/bp-training/movies/shell/feature').then(
+            (m) => m.BpTrainingMoviesShellFeatureModule
+          ),
+      },
+      {
         path: 'state-training',
         loadChildren: () =>
           import('@bp/state-training/shell/feature').then(
